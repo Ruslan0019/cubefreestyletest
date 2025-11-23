@@ -1,8 +1,9 @@
 backend:
 name: github
 repo: ruslan0019s-projects/cubefreestyletest
-repository branch: main
-base_url: https://cubefreestyletest.vercel.app/
+branch: main
+base_url: https://cubefreestyletest.vercel.app
+auth_endpoint: api/auth/login
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
