@@ -8,7 +8,7 @@ export async function GET(request, { params }) {
 
   // 1. Redirect user to GitHub login
   if (route[0] === "login") {
-    const redirectUri = `${request.nextUrl.origin}/api/auth/callback`;
+    const redirectUri = `https://cubefreestyletest.vercel.app/api/auth/callback`;
 
     const githubUrl =
       `https://github.com/login/oauth/authorize?` +
