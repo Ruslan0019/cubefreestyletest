@@ -12,7 +12,7 @@ export async function GET(request, { params }) {
 
     const githubUrl =
       `https://github.com/login/oauth/authorize?` +
-      `client_id=${clientId}&redirect_uri=${redirectUri}&scope=repo`;
+      `client_id=${clientId}&redirect_uri=${redirectUri}&scope=public_repo`;
 
     return NextResponse.redirect(githubUrl);
   }
