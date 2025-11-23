@@ -1,5 +1,5 @@
 backend:
-name: [github | gitlab]
+name: github
 repo: ruslan0019s-projects/cubefreestyletest
 repository branch: main
 base_url: https://cubefreestyletest.vercel.app/
