@@ -1,0 +1,54 @@
+[[redirects]]
+  from = "/about-cube/"
+  to = "/about-cube"
+  status = 301
+
+[[redirects]]
+  from = "/clients/"
+  to = "/clients"
+  status = 301
+
+[[redirects]]
+  from = "/contacts/"
+  to = "/contacts"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio/"
+  to = "/portfolio"
+  status = 301
+[[redirects]]
+  from = "/portfolio/page-2/"
+  to = "/portfolio/page-2"
+  status = 301
+[[redirects]]
+  from = "/portfolio/page-3"
+  to = "/portfolio/page-3"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/team/dero/"
+  to = "/team/dero"
+  status = 301
+[[redirects]]
+  from = "/team/atte/"
+  to = "/team/atte"
+  status = 301
+[[redirects]]
+  from = "/team/skolob/"
+  to = "/team/skolob"
+  status = 301
+[[redirects]]
+  from = "/team/alive/"
+  to = "/team/alive"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-use/"
+  to = "/terms-of-use"
+  status = 301

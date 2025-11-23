@@ -1,0 +1,71 @@
+clients:
+  - image: /uploads/17.webp
+    alt: UEFA Champions League
+  - image: /uploads/18.webp
+    alt: UEFA EURO 2012
+  - image: /uploads/20.webp
+    alt: AliExpress
+  - image: /uploads/6.webp
+    alt: Lay's
+  - image: /uploads/7.webp
+    alt: UEFA EURO 2016
+  - image: /uploads/rb.webp
+    alt: Red Bull
+  - image: /uploads/19.webp
+    alt: UEFA
+  - image: /uploads/3.webp
+    alt: Шахтар
+  - image: /uploads/2.webp
+    alt: Динамо Київ
+  - image: /uploads/13.webp
+    alt: Pepsi
+  - image: /uploads/1.webp
+    alt: Bikkembergs
+  - image: /uploads/35.webp
+    alt: FC dnipro
+  - image: /uploads/33.webp
+    alt: Моршинська
+  - image: /uploads/nis.webp
+    alt: Nissan
+  - image: /uploads/10.webp
+    alt: Національний Олімпійський Комітет України
+  - image: /uploads/31.webp
+    alt: Neo Plaza
+  - image: /uploads/30.webp
+    alt: Наша Правда
+  - image: /uploads/29.webp
+    alt: Нагорка
+  - image: /uploads/28.webp
+    alt: Street Culture
+  - image: /uploads/27.webp
+    alt: Караван
+  - image: /uploads/26.webp
+    alt: Злагода
+  - image: /uploads/25.webp
+    alt: Econom Class
+  - image: /uploads/34.webp
+    alt: Street Workout
+  - image: /uploads/24.webp
+    alt: ДІІТ
+  - image: /uploads/23.webp
+    alt: Благодійний Фонд Даруємо Радість
+  - image: /uploads/22.webp
+    alt: Асоціація футболу. Дніпропетровська область
+  - image: /uploads/21.webp
+    alt: APPOLLO
+  - image: /uploads/15.webp
+    alt: Rabona
+  - image: /uploads/14.webp
+    alt: PEPSICO
+  - image: /uploads/12.webp
+    alt: Octoberfest
+  - image: /uploads/11.webp
+    alt: НСК Олімпійський
+  - image: /uploads/9.webp
+    alt: Move On
+  - image: /uploads/8.webp
+    alt: Dnipro Jewish Community
+  - image: /uploads/5.webp
+    alt: Kino Mania
+  - image: /uploads/4.webp
+    alt: Hello Ukraine

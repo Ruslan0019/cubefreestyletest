@@ -1,0 +1,690 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+i18n:
+  structure: single_file
+  locales: [uk, ru]
+  default_locale: uk
+
+collections:
+  - name: "pages"
+    label: "Сторінки"
+    i18n: true
+    files:
+      - name: "social_links"
+        label: "Social Links"
+        file: "content/pages/social_links.md"
+        i18n: true
+        fields:
+          - {
+              name: "telephone",
+              label: "Телефон",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "instagram",
+              label: "Instagram URL",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "telegram",
+              label: "Telegram URL",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "youtube",
+              label: "YouTube URL",
+              widget: "string",
+              i18n: true,
+            }
+          - { name: "viber", label: "Viber URL", widget: "string", i18n: true }
+
+      - name: "home"
+        label: "Сторінка головна"
+        file: "content/pages/home.md"
+        i18n: true
+        fields:
+          - {
+              name: "title_seo",
+              label: "Title_Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description_Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "hero_video_desktop",
+              label: "Hero Video (Desktop)",
+              widget: "file",
+              i18n: true,
+            }
+          - {
+              name: "hero_video_mobile",
+              label: "Hero Video (Mobile)",
+              widget: "file",
+              i18n: true,
+            }
+          - {
+              name: "hero_poster_desktop",
+              label: "Hero Poster (Desktop)",
+              widget: "image",
+              i18n: true,
+            }
+          - {
+              name: "hero_poster_mobile",
+              label: "Hero Poster (Mobile)",
+              widget: "image",
+              i18n: true,
+            }
+          - {
+              name: "hero_title",
+              label: "Hero_title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "hero_button",
+              label: "Hero_button",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "about_title",
+              label: "About_Title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "about_image",
+              label: "About_Image",
+              widget: "image",
+              i18n: true,
+            }
+          - {
+              name: "about_description",
+              label: "About_Description",
+              widget: "markdown",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_title",
+              label: "whyUs_title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_image",
+              label: "whyUs_image",
+              widget: "image",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card1_title",
+              label: "whyUs_card1_title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card1_description",
+              label: "whyUs_card1_description",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card2_title",
+              label: "whyUs_card2_title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card2_description",
+              label: "whyUs_card2_description",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card3_title",
+              label: "whyUs_card3_title",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "whyUs_card3_description",
+              label: "whyUs_card3_description",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "map_image_desktop",
+              label: "Зображення карти (Desktop)",
+              widget: "image",
+              i18n: true,
+            }
+          - {
+              name: "map_image_mobile",
+              label: "Зображення карти (Mobile)",
+              widget: "image",
+              i18n: true,
+            }
+
+      - name: "about"
+        label: "Сторінка про нас"
+        file: "content/pages/about.md"
+        i18n: true
+        fields:
+          - {
+              name: "title_seo",
+              label: "Title_Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description_Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - { name: "title", label: "Заголовок", widget: "string", i18n: true }
+          - {
+              name: "subtitle",
+              label: "Підзаголовок",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "content",
+              label: "Основний абзац (зверху)",
+              widget: "markdown",
+              i18n: true,
+            }
+      - name: "portfolio_page"
+        label: "Сторінка портфоліо"
+        file: "content/pages/portfolio_page.md"
+        i18n: true
+        fields:
+          - { name: "title", label: "Заголовок", widget: "string", i18n: true }
+          - {
+              name: "title_seo",
+              label: "Title_Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description_Seo",
+              widget: "string",
+              i18n: true,
+            }
+      - name: "clients"
+        label: "Сторінка клієнти"
+        file: "content/pages/clients.md"
+        i18n: true
+        fields:
+          - {
+              name: "title_seo",
+              label: "Title Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description seo",
+              widget: "string",
+              i18n: true,
+            }
+          - { name: "title", label: "Заголовок", widget: "string", i18n: true }
+          - {
+              name: "subtitle",
+              label: "Підзаголовок / короткий опис під заголовком",
+              widget: "string",
+              i18n: true,
+            }
+
+      - name: "contacts"
+        label: "Сторінка контакти"
+        file: "content/pages/contacts.md"
+        i18n: true
+        fields:
+          # SEO
+          - {
+              name: "title_seo",
+              label: "Title SEO",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description SEO",
+              widget: "string",
+              i18n: true,
+            }
+
+          # Верхний блок (фон с заголовками)
+          - {
+              name: "title",
+              label: "Основний заголовок (Контакти)",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "subtitle",
+              label: "Підзаголовок (замовляй шоу...)",
+              widget: "string",
+              i18n: true,
+            }
+
+          # Контактна інформація (ліва колонка)
+          - label: "Контактна інформація"
+            name: "contact_info"
+            widget: "object"
+            i18n: true
+            fields:
+              - {
+                  name: "location_title",
+                  label: "Заголовок локації",
+                  widget: "string",
+                  default: "Де ми знаходимось:",
+                  i18n: true,
+                }
+              - {
+                  name: "location_value",
+                  label: "Місто",
+                  widget: "string",
+                  default: "Дніпро",
+                  i18n: true,
+                }
+              - {
+                  name: "area_title",
+                  label: "Заголовок охоплення",
+                  widget: "string",
+                  default: "Де ми виступаємо:",
+                  i18n: true,
+                }
+              - {
+                  name: "area_value",
+                  label: "Охоплення",
+                  widget: "string",
+                  default: "вся Україна",
+                  i18n: true,
+                }
+              - {
+                  name: "phone_title",
+                  label: "Заголовок телефону",
+                  widget: "string",
+                  default: "Наш телефон",
+                  i18n: true,
+                }
+              - {
+                  name: "phone_number",
+                  label: "Номер телефону",
+                  widget: "string",
+                  default: "+38 (050) 591 61 34",
+                  i18n: true,
+                }
+              - {
+                  name: "email_title",
+                  label: "Заголовок пошти",
+                  widget: "string",
+                  default: "Наша пошта",
+                  i18n: true,
+                }
+              - {
+                  name: "email",
+                  label: "Email",
+                  widget: "string",
+                  default: "cubefreestyle@gmail.com",
+                  i18n: true,
+                }
+
+          # Форма (права частина)
+          - label: "Форма замовлення"
+            name: "form"
+            widget: "object"
+            i18n: true
+            fields:
+              - {
+                  name: "form_title",
+                  label: "Заголовок форми",
+                  widget: "string",
+                  default: "Замовлення шоу футбольного фристайлу",
+                  i18n: true,
+                }
+              - {
+                  name: "name_label",
+                  label: "Лейбл для імені",
+                  widget: "string",
+                  default: "ім’я*",
+                  i18n: true,
+                }
+              - {
+                  name: "name_placeholder",
+                  label: "Плейсхолдер для імені",
+                  widget: "string",
+                  default: "Введіть ім’я",
+                  i18n: true,
+                }
+              - {
+                  name: "phone_label",
+                  label: "Лейбл для телефону",
+                  widget: "string",
+                  default: "+380",
+                  i18n: true,
+                }
+              - {
+                  name: "phone_placeholder",
+                  label: "Плейсхолдер для телефону",
+                  widget: "string",
+                  default: "+380",
+                  i18n: true,
+                }
+              - {
+                  name: "service_label",
+                  label: "Лейбл для вибору послуги",
+                  widget: "string",
+                  default: "Оберіть послугу*",
+                  i18n: true,
+                }
+              - {
+                  name: "message_label",
+                  label: "Лейбл для повідомлення",
+                  widget: "string",
+                  default: "Напишіть нам повідомлення (необов’язково)",
+                  i18n: true,
+                }
+              - {
+                  name: "message_placeholder",
+                  label: "Плейсхолдер для повідомлення",
+                  widget: "string",
+                  default: "Напишіть нам повідомлення (необов’язково)",
+                  i18n: true,
+                }
+              - {
+                  name: "button_text",
+                  label: "Текст кнопки",
+                  widget: "string",
+                  default: "Відправити",
+                  i18n: true,
+                }
+      - name: "terms_of_use"
+        label: "Сторінка правила користування"
+        file: "content/pages/terms_of_use.md"
+        i18n: true
+        fields:
+          - {
+              name: "title_seo",
+              label: "Title Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description Seo",
+              widget: "string",
+              i18n: true,
+            }
+
+      - name: "privacy_policy"
+        label: "Сторінка політика конфіденційності"
+        file: "content/pages/privacy_policy.md"
+        i18n: true
+        fields:
+          - {
+              name: "title_seo",
+              label: "Title Seo",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              name: "description_seo",
+              label: "Description Seo",
+              widget: "string",
+              i18n: true,
+            }
+
+  - name: "services"
+    label: "Послуги"
+    folder: "content/services"
+    i18n: true
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - { name: "title_seo", label: "Title Seo", widget: "string", i18n: true }
+      - {
+          name: "description_seo",
+          label: "Description Seo",
+          widget: "string",
+          i18n: true,
+        }
+      - { name: "title", label: "Назва послуги", widget: "string", i18n: true }
+      - {
+          name: "short_description",
+          label: "Короткий опис",
+          widget: "string",
+          i18n: true,
+        }
+      - { name: "image", label: "Головне фото", widget: "image", i18n: true }
+      - {
+          name: "video",
+          label: "Відео (mp4 або webm)",
+          widget: "file",
+          i18n: true,
+          required: false,
+        }
+
+      # --- GALLERY ---
+      - name: "gallery"
+        label: "Галерея фото"
+        widget: "list"
+        i18n: true
+        required: false
+        fields:
+          - name: "image"
+            label: "Фото"
+            widget: "image"
+            allow_multiple: false
+
+      # --- FAQ TITLE ---
+      - name: "faq_title"
+        label: "Заголовок FAQ"
+        widget: "string"
+        i18n: true
+        required: false
+
+      # --- FAQ LIST ---
+      - name: "faq"
+        label: "FAQ"
+        widget: "list"
+        i18n: true
+        required: false
+        fields:
+          - name: "question"
+            label: "Питання"
+            widget: "string"
+            i18n: true
+            required: false
+          - name: "answer"
+            label: "Відповідь"
+            widget: "text"
+            i18n: true
+            required: false
+
+  - name: "portfolio"
+    label: "Портфоліо"
+    label_singular: "Івент"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{title}} — {{date}}"
+    i18n: true
+    fields:
+      - { label: "Назва івенту", name: "title", widget: "string", i18n: true }
+
+      - {
+          label: "Короткий опис (3 рядки)",
+          name: "description",
+          widget: "text",
+          i18n: true,
+        }
+      - {
+          label: "Дата івенту",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
+      - {
+          label: "Обкладинка (картка)",
+          name: "cover",
+          widget: "image",
+          i18n: true,
+        }
+      - label: "Медіа (до 10)"
+        name: "media"
+        widget: "list"
+        i18n: true
+        fields:
+          - {
+              label: "Тип",
+              name: "kind",
+              widget: "select",
+              options: ["image", "video"],
+              default: "image",
+              i18n: true,
+            }
+          - { label: "Файл", name: "file", widget: "file", i18n: true }
+          - {
+              label: "Alt / Підпис (для зображень)",
+              name: "alt",
+              widget: "string",
+              required: false,
+              i18n: true,
+            }
+          - {
+              label: "Постер (для відео)",
+              name: "poster",
+              widget: "image",
+              required: false,
+              i18n: true,
+            }
+      - {
+          label: "Теги",
+          name: "tags",
+          widget: "list",
+          required: false,
+          i18n: true,
+        }
+
+  - name: "reviews"
+    label: "Відгуки"
+    folder: "content/reviews"
+    i18n: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.name}}"
+    fields:
+      - { name: "name", label: "Ім'я", widget: "string", i18n: true }
+      - { name: "text", label: "Текст відгуку", widget: "text", i18n: true }
+      - { name: "photo", label: "Фото", widget: "image", i18n: true }
+      - {
+          name: "rating",
+          label: "Рейтинг (1–5)",
+          widget: "number",
+          min: 1,
+          max: 5,
+          default: 5,
+        }
+      - { name: "date", label: "Дата", widget: "datetime", i18n: true }
+
+  - name: "clients"
+    label: "Клієнти"
+    i18n: false
+    files:
+      - file: "content/clients.yaml"
+        label: "Список клієнтів"
+        name: "clients"
+        fields:
+          - label: "Клієнти"
+            name: "clients"
+            widget: "list"
+            fields:
+              - { label: "Логотип", name: "image", widget: "image" }
+              - { label: "Alt текст", name: "alt", widget: "string" }
+
+  - name: "team"
+    label: "Наша команда"
+    folder: "content/team"
+    i18n: true
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - { name: "title_seo", label: "Title_Seo", widget: "string", i18n: true }
+      - {
+          name: "description_seo",
+          label: "Description_Seo",
+          widget: "string",
+          i18n: true,
+        }
+      - { name: "name", label: "Ім’я", widget: "string", i18n: true }
+      - { name: "slug", label: "Slug (URL)", widget: "string", i18n: true }
+      - { name: "role", label: "Посада/Роль", widget: "string", i18n: true }
+      - { name: "status", label: "Статус", widget: "string", i18n: true }
+      - {
+          name: "section_title",
+          label: "Заголовок секції",
+          widget: "string",
+          i18n: true,
+        }
+      - { name: "bio", label: "Коротке біо", widget: "markdown", i18n: true }
+      - {
+          name: "thumbnail",
+          label: "Фото у списку",
+          widget: "image",
+          i18n: true,
+        }
+      - {
+          name: "main_photo",
+          label: "Головне фото на сторінці",
+          widget: "image",
+          i18n: true,
+        }
+
+      - label: "Досягнення"
+        name: "achievements"
+        widget: "list"
+        i18n: true
+        fields:
+          - label: "Текст"
+            name: "text"
+            widget: "string"
+            i18n: true
+      - label: "Галерея"
+        name: "gallery"
+        i18n: true
+        widget: "list"
+        fields:
+          - label: "Фото"
+            name: "image"
+            widget: "image"
+
+  - name: "gallery"
+    label: "Галерея"
+    folder: "content/gallery"
+    create: false
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - {
+          name: "images",
+          label: "Images",
+          widget: "list",
+          field: { label: "Image", name: "image", widget: "image" },
+        }
