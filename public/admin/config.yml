@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
-  branch: main
+name: [github | gitlab]
+repo: ruslan0019s-projects/cubefreestyletest
+repository branch: main
+base_url: https://cubefreestyletest.vercel.app/
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
